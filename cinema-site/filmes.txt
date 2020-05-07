@@ -1,0 +1,34 @@
+0
+Star Wars - A Ameaça fantasma
+starwars.jpg
+17:30
+10 anos
+Obi-Wan e seu mentor embarcam em uma perigosa aventura na tentativa de salvar o planeta das garras de Darth Sidious. Durante a viagem, eles conhecem um habilidoso menino e decidem treiná-lo para se tornar um Jedi.'
+
+1
+A Teoria de Tudo
+teoria.jpg
+13:30
+Livre
+Baseado na história de Stephen Hawking, o filme expõe como o astrofísico fez descobertas relevantes para o mundo da ciência, inclusive relacionadas ao tempo. '
+
+2
+Sniper Americano
+sniper.jpg
+21:30
+14 anos
+História real de Chris Kyle, atirador de elite das forças especiais da marinha dos Estados Unidos. Durante a guerra do Iraque, sua missão era uma só- proteger seus companheiros.'
+
+3
+Django Livre
+django.jpg
+21:30
+18 anos
+No sul dos Estados Unidos, anos antes da Guerra Civil, um ex-escravo Django faz uma aliança inesperada com o caçador de recompensas Schultz para caçar os criminosos mais procurados do país e resgatar sua esposa.'
+
+4
+A Árvore da Vida
+arvore.jpg
+16:30
+Livre
+História de uma típica família americana dos anos 50, formada por um casal e três filhos. A rígida educação, o ambiente e o passado ainda permeiam a vida de Jack, o filho mais velho, que na vida adulta tenta se reconciliar com o pai.

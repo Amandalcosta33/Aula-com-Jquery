@@ -1,0 +1,62 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.pokemon-foto{
+    width: 150px;
+    filter: brightness(0);
+    position: relative;
+    top: 130px;
+    left: 40px;
+}
+
+#pokemon{
+    background-image: url('imagens/fundo.png');
+    height: 480px;
+    width: 640px;
+    text-align: left;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+#pokemon-nome{
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+
+button{
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.ajuda{
+    color: #fff;
+    background-color: #ff4800;
+    border-color: #ff4800;
+}
+
+#pokemon-ajuda{
+    margin-top: 10px;
+}
+
+#pokemon-ajuda span{
+    margin: 5px;
+    border: 1px solid black;
+    padding: 3px;
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+}
+
+#pokemon-ajuda span img{
+    height: 90px;
+}
