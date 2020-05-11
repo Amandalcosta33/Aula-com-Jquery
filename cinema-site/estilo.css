@@ -64,3 +64,15 @@ body{
     padding: 0;
 }
 
+.area-carrinho{
+    margin-bottom: 20px;
+    border-bottom: 3px solid #cacaca;
+    padding: 5px;
+}
+
+#botao-carrinho img{
+    vertical-align: middle;
+    margin-right: 8px;
+    cursor: pointer;
+}
+

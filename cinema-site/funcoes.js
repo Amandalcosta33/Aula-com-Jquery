@@ -1,6 +1,7 @@
 // let filmesNome =  ['Karate Kid  - A hora da verdade', 'Garotos Perdidos'];
 // let filmesImagens = ['karatekid.jpg', 'lostboys.jpg'];
 // let classificacaoFilme = ['10 anos', '14 anos'];
+let ingressos = [];
 
 let filmes = [
     {
@@ -56,7 +57,7 @@ function MontarCartao(filme){
     let cartaoMontado ="<div class='cartao'> ";
     cartaoMontado += "<img src='imagens/" + filme.foto + "'>";
     cartaoMontado += "<h3>" + filme.nome + "</h3>";
-    cartaoMontado += "<button class='ver-mais'> Ver Mais </button>";
+    cartaoMontado += "<button class='ver-mais'>Ver Mais</button>";
     cartaoMontado += "<div class='descricao'>";
     cartaoMontado += "<ul>";
     cartaoMontado += "<li><Strong> Horário: </strong>" + filme.horario + " </li>";
@@ -74,12 +75,34 @@ $('.descricao').hide();
 
 $('.ver-mais').click(function(){
     // $('.descricao').show();
+    console.log($(this).text());
+    if($(this).text() =="Ver Mais"){
+        $(this).text("Ver Menos");
+    }else{
+        $(this).text("Ver Mais");
+    }
     $(this).next().slideToggle();
 }
 );
 
 $('.botao-comprar').click(function(){
-    let filmeComprar = filmes[$(this).attr('data-id')].nome;
-    alert('Iniciado o processo da compra do filme: ' + filmeComprar + '!');
+    ComprarIngresso(filmes[$(this).attr('data-id')]);
+}
+);
+
+function ComprarIngresso(filme){
+    let confirmação = confirm("Você esta prestes a comprar um ingresso para o filme "+ filme.nome + "\n Confirma?");
+    if (confirmação){
+        ingressos.push(filme.nome);
+        $('.ingressos').text(ingressos.length);
+        $('.lista-ingresso').append("<li>" + filme.nome + "</li>");
+        // $('.lista-ingresos').html(listaIngresso);
+        if ($('#botao-finalizar').length <= 0){
+            $('.area-carrinho').append('<button id="botao-finalizar" class="botao-comprar">FINALIZAR COMPRA </button>');
+        }  
+    }
+}
+$('#botao-carrinho').click(function(){
+$('.lista-ingresso').slideToggle();
 }
 );
