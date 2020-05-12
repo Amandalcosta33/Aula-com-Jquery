@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lanchonete</title>
+        <meta charset="utf-8">
+        <link href="libi/pure-min.css" rel="stylesheet">
+        <link href="libi/jquery.avgrund.js/style/avgrund.css" rel="stylesheet">
+        <script src="libi/jquery-3.5.0.js"></script>
+        <script src="libi/jquery.avgrund.js/jquery.avgrund.js"></script>
+        <link href="libi/Nivo-Slider-jQuery-master/themes/default/default.css" rel="stylesheet">
+        <link href="libi/Nivo-Slider-jQuery-master/nivo-slider.css" rel="stylesheet">
+        <script src="libi/Nivo-Slider-jQuery-master/jquery.nivo.slider.js"></script>
+        <link href="estilo.css" rel="stylesheet">
+        <script src="libi/funcoes.js"></script>
+    </head>
+    <body>
+      <h1>Lanchonete</h1>
+      <button id="botao-cardapio"> Cardápio</button>
+      <div id="slider" class="nivoSlider theme-default">
+          <img src="img/natal1.jpg">
+          <img src="img/natal2.jpg">
+          <img src="img/natal3.jpg">
+          <img src="img/natal4.jpg">
+      </div>
+      <!-- <div class="conteudo-cardapio">
+          <stong>Cardápio da lanchonete</stong>
+          <ul>
+              <li>Lanche</li>
+        </ul>
+      </div> -->
+      <script>
+        //   $('#botao-cardapio').avgrund({
+        //       template: $('.conteudo-cardapio'),
+        //       showClose: true,
+        //       showCloseText: 'x'
+        //   });
+            $('#slider').nivoSlider();
+      </script>
+    </body>
+</html>
