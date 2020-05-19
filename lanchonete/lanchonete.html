@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Lanchonete</title>
-        <meta charset="utf-8">
-        <link href="libi/pure-min.css" rel="stylesheet">
-        <link href="libi/jquery.avgrund.js/style/avgrund.css" rel="stylesheet">
-        <script src="libi/jquery-3.5.0.js"></script>
-        <script src="libi/jquery.avgrund.js/jquery.avgrund.js"></script>
-        <link href="libi/Nivo-Slider-jQuery-master/themes/default/default.css" rel="stylesheet">
-        <link href="libi/Nivo-Slider-jQuery-master/nivo-slider.css" rel="stylesheet">
-        <script src="libi/Nivo-Slider-jQuery-master/jquery.nivo.slider.js"></script>
-        <!-- <link href="libi/jquery-modal-master/jquery.modal.css" rel="stylesheet">
+
+<head>
+  <title>Lanchonete</title>
+  <meta charset="utf-8">
+  <link href="libi/pure-min.css" rel="stylesheet">
+  <link href="libi/jquery.avgrund.js/style/avgrund.css" rel="stylesheet">
+  <script src="libi/jquery-3.5.0.js"></script>
+  <script src="libi/jquery.avgrund.js/jquery.avgrund.js"></script>
+  <link href="libi/Nivo-Slider-jQuery-master/themes/default/default.css" rel="stylesheet">
+  <link href="libi/Nivo-Slider-jQuery-master/nivo-slider.css" rel="stylesheet">
+  <script src="libi/Nivo-Slider-jQuery-master/jquery.nivo.slider.js"></script>
+  <!-- <link href="libi/jquery-modal-master/jquery.modal.css" rel="stylesheet">
         <script src="libi/jquery-modal-master/jquery.modal.js"></script> -->
-        <!-- <link href="libi/jquery.fancybox-1.3.4/style.css" rel="stylesheet">
+  <!-- <link href="libi/jquery.fancybox-1.3.4/style.css" rel="stylesheet">
         <script src="libi/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"></script> -->
-        <link href="libi/fancybox-master/dist/jquery.fancybox.css" rel="stylesheet">
-        <script src="libi/fancybox-master/dist/jquery.fancybox.js"></script>
-        <link href="libi/slick-1.8.1/slick/slick.css" rel="stylesheet">
-        <script src="libi/slick-1.8.1/slick/slick.js"></script>
-        <link href="libi/slick-1.8.1/slick/slick-theme.css" rel="stylesheet">
-        <link href="estilo.css" rel="stylesheet">
-        <script src="libi/funcoes.js"></script>
-    </head>
-    <body>
-        <div id="slider" class="nivoSlider theme-default">
-            <img src="img/natal1.jpg">
-            <img src="img/natal2.jpg">
-            <img src="img/natal3.jpg">
-            <img src="img/natal4.jpg">
+  <link href="libi/Responsive-Multipurpose-Tabs-Accordion-Plugin-With-jQuery/css/style.css" rel="stylesheet">
+  <script
+    src="libi/Responsive-Multipurpose-Tabs-Accordion-Plugin-With-jQuery/js/jquery.multipurpose_tabcontent.js"></script>
+  <link href="libi/fancybox-master/dist/jquery.fancybox.css" rel="stylesheet">
+  <script src="libi/fancybox-master/dist/jquery.fancybox.js"></script>
+  <link href="libi/slick-1.8.1/slick/slick.css" rel="stylesheet">
+  <script src="libi/slick-1.8.1/slick/slick.js"></script>
+  <link href="libi/slick-1.8.1/slick/slick-theme.css" rel="stylesheet">
+  <link href="estilo.css" rel="stylesheet">
+  <script src="libi/funcoes.js"></script>
+</head>
+
+<body>
+  <div id="slider" class="nivoSlider theme-default">
+    <img src="img/natal1.jpg">
+    <img src="img/natal2.jpg">
+    <img src="img/natal3.jpg">
+    <img src="img/natal4.jpg">
+  </div>
+
+
+  <h1>Lanchonete</h1>
+
+  <div class="tab_wrapper abas">
+    <ul class="tab_list">
+      <li class="active">Cardápio</li>
+      <li>Endereço</li>
+    </ul>
+
+    <div class="content_wrapper">
+      <div class="tab_content active">
+        <a data-fancybox data-src="#destaque" href="javascript:;" class="pure-button pure-button-primary">Destaque</a>
+        <button id="botao-cardapio" class="pure-button pure-button-primary">Cardápio</button>
+        <div id="destaque" style="display: none;">
+          <h3>Destaque do dia</h3>
+          <img src="img/lanche1.png">
         </div>
-      <h1>Lanchonete</h1>
-      <button id="botao-cardapio" class="pure-button pure-button-primary"> Cardápio</button>
-    <div id="destaque" style="display: none;">
-        <h3>Destaque do dia</h3>
-        <img src="img/lanche1.png">
-    </div> 
+        <button id="cardapio-completo" class="pure-button pure-button-primary">Cardápio completo</button>
 
-    <div class="multiple-items" style="width: 1000px; margin: 0 auto;">
-        <div><img src="img/lanche1.png"></div>
-        <div><img src="img/lanche2.png"></div>
-        <div><img src="img/lanche3.jpg"></div>
-        <div><img src="img/lanche4.png"></div>
-        <div><img src="img/lanche5.jpg"></div>
-        <div><img src="img/lanche6.jpg"></div>
-        <div><img src="img/lanche7.jpg"></div>
+        <button id="cardapio-online" class="pure-button pure-button-primary">Cardápio online</button>
+        <div id="cardapio-completo-lista"></div>
       </div>
+      <div class="tab_content">
+        <form class="pure-form">
+          <input id="cep" placeholder="Digite seu CEP">
+          <button type="button" class="pure-button pure-button-primary" id="botao-buscar-cep">PESQUISAR</button>
+          <div id="endereco-completo"></div>
+        </form>
+      </div>
+    </div>
+  </div>
 
 
-    <a data-fancybox data-src="#destaque" href="javascript:;"  class="pure-button pure-button-primary">Destaque</a>
-      <!-- <div class="conteudo-cardapio">
+  <div class="multiple-items" style="width: 1000px; margin: 0 auto;">
+    <div><img src="img/lanche1.png"></div>
+    <div><img src="img/lanche2.png"></div>
+    <div><img src="img/lanche3.jpg"></div>
+    <div><img src="img/lanche4.png"></div>
+    <div><img src="img/lanche5.jpg"></div>
+    <div><img src="img/lanche6.jpg"></div>
+    <div><img src="img/lanche7.jpg"></div>
+  </div>
+
+
+
+
+  <!-- <div class="conteudo-cardapio">
           <stong>Cardápio da lanchonete</stong>
           <ul>
               <li>Lanche</li>
         </ul>
       </div> -->
-    </body>
+</body>
+
 </html>

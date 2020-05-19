@@ -1,0 +1,24 @@
+<table class="pure-table pure-table-bordered">
+    <thead>
+        <tr>
+            <td>Código</td>	<td>Descrição</td>	<td>Preço</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>001</td>    <td>Dogão Simples</td>  <td>R$ 6,25	</td>
+        </tr>
+        <tr>
+            <td>002</td>    <td>Dogão Duplo</td>    <td>R$ 6,75	</td>
+        </tr>
+        <tr>
+            <td>003</td>    <td>X-Salada</td>       <td>R$ 10,75	</td>
+        </tr>
+        <tr>
+            <td>004</td>    <td>X-Egg</td>          <td>R$ 11,75	</td>
+        </tr>
+        <tr>
+            <td>005</td>    <td>X-Bacon	</td>       <td>R$ 13,50	</td>
+        </tr>
+    </tbody>
+</table>
